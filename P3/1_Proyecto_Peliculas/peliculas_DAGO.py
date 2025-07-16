@@ -186,7 +186,7 @@ def modificarCaracteristicaPeliculas():
          
 
 
-                sql="update peliculas set nombre=%s,categoria=%s,clasificacion=%s.genero=%s,idioma=%s where nombre=%s"
+                sql="update peliculas set nombre=%s,categoria=%s,clasificacion=%s,genero=%s,idioma=%s where nombre=%s"
                 val=(pelicula["nombre"],pelicula["categoria"],pelicula["clasificacion"],pelicula["genero"],pelicula["idioma"],nombre)
                 cursor.execute(sql,val)
                 conexionDB.commit()
